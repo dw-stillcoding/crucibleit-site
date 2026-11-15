@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crucible IT | Home tech help, coming soon</title>
+  <meta name="description" content="Crucible IT: calm, step-by-step home tech help for New Zealand households. Coming soon.">
+  <style>
+    :root {
+      --bg: #f6f3ee;
+      --card: #ffffff;
+      --ink: #1d2a33;
+      --muted: #55636d;
+      --accent: #c2562d;
+      --accent-soft: #f3e1d8;
+      --line: #e4ddd3;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14191d;
+        --card: #1c2329;
+        --ink: #eef1f3;
+        --muted: #a7b2ba;
+        --accent: #e67a4f;
+        --accent-soft: #3a2a23;
+        --line: #2c353c;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.55;
+    }
+    main {
+      flex: 1;
+      display: grid;
+      place-items: center;
+      padding: 48px 20px;
+    }
+    .card {
+      width: 100%;
+      max-width: 640px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 48px 40px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 36px;
+    }
+    .mark {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: var(--accent);
+      display: grid;
+      place-items: center;
+    }
+    .brand-name {
+      font-weight: 700;
+      font-size: 1.15rem;
+      letter-spacing: 0.01em;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 6px 12px;
+      border-radius: 999px;
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      line-height: 1.15;
+      margin: 0 0 16px;
+      letter-spacing: -0.01em;
+    }
+    .lead {
+      font-size: 1.15rem;
+      color: var(--muted);
+      margin: 0 0 32px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 32px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px 20px;
+    }
+    li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    li::before {
+      content: "";
+      flex: none;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .note {
+      border-top: 1px solid var(--line);
+      padding-top: 24px;
+      margin: 0;
+      color: var(--muted);
+    }
+    footer {
+      text-align: center;
+      padding: 0 20px 28px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    @media (max-width: 480px) {
+      .card { padding: 36px 24px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <div class="brand">
+        <div class="mark" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 12.5a11 11 0 0 1 16 0"/>
+            <path d="M7.5 15.5a6 6 0 0 1 9 0"/>
+            <circle cx="12" cy="19" r="1.2" fill="#fff" stroke="none"/>
+          </svg>
+        </div>
+        <span class="brand-name">Crucible IT</span>
+      </div>
+
+      <span class="badge">Coming soon</span>
+      <h1>Home tech help, made simple.</h1>
+      <p class="lead">Calm, step-by-step help for everyday tech problems at home, with a real New Zealand technician when you need one.</p>
+
+      <ul aria-label="What we'll help with">
+        <li>Wi-Fi and internet dropouts</li>
+        <li>Windows laptops and PCs</li>
+        <li>Macs</li>
+        <li>Smart TVs and streaming</li>
+        <li>Printers</li>
+        <li>Email and accounts</li>
+        <li>Spotting scams and staying safe</li>
+      </ul>
+
+      <p class="note">We're building something new for Kiwi households. Check back soon.</p>
+    </div>
+  </main>
+  <footer>&copy; 2026 Crucible IT &middot; Aotearoa New Zealand</footer>
+</body>
+</html>
